@@ -19,9 +19,47 @@ and open the template in the editor.
             </header>
 
             <article>
-                <br> <br> <br> <br>
+                <br> <br> <br>
 
-                <a> Información de contacto </a>
+                <h3> Estamos aqui </h3>
+                <div id="map">
+                    <script> initMap()</script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPFWlOxIh2-HZiZtM6GHshfs8ZQv2w748&callback=initMap"></script>
+                </div>
+
+                <br> <br>
+
+                <div id="horarios">
+                    <h3> Horarios de atencion al cliente </h3>
+                    <b>  Lunes a Viernes: </b>
+                    <a>  10:30 a 13:00 - 15:30 a 19:30 <br> </a>
+                    <b>  Sábados y Domingos: </b>
+                    <a>  15:00 a 17:00 <br> </a>
+                    <b>  Festivos: </b>
+                    <a>  12:00 a 13:00 </a>
+                </div>
+
+                <br>
+
+                <div id="telefono">
+                    <h3> Teléfono </h3>
+                    <a>  Para cualquier tipo de duda: <b> 963 44 55 67 </b> </a>
+                </div>
+
+                <br> <br>
+
+                <table>
+                    <tr>
+                        <a> Envianos un correo </a>
+                    </tr>
+                    <tr>
+                        <td> <textarea id="textArea" rows="2" cols="25"> </textarea> </td>
+                    <tr>
+                        <td> <input type="reset" value="Enviar" /> </td>
+                    </tr>
+                </table>
+                
+                <br>
 
             </article>
 

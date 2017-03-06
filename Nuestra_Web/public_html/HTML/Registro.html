@@ -15,7 +15,7 @@ and open the template in the editor.
     <body>
         <form action="procesar.cgi" method="POST">
             <header id="menu">
-                <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu"); </script>
+                <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu");</script>
             </header>
 
             <article>
@@ -34,7 +34,13 @@ and open the template in the editor.
                         <td> Contraseña: </td> <td> <input type="password" name="password" size="20" maxlength="20" required/> </td>
                     </tr>
                     <tr>
-                        <td> Email </td> <td> <input type="email" name="email" size="40" maxlength="50" /> </td>
+                        <td> Teléfono: </td> <td> <input type="number" name="telefono" min="1" max="999999999" required /> </td>
+                    </tr>
+                    <tr>
+                        <td> Dirección </td> <td> <input type="text" name="direccion" size="40" maxlength="50" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> Email </td> <td> <input type="email" name="email" size="40" maxlength="50" required/> </td>
                     </tr>
                     <tr>
                         <td></td>
@@ -43,8 +49,10 @@ and open the template in the editor.
                 </table>
             </article>
 
+            <br>
+
             <footer id="pie">  
-                <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie"); </script>
+                <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie");</script>
             </footer>
         </form>
     </body>

@@ -10,35 +10,41 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src=../JavaScript/libCapas.js></script>
-        <link rel="stylesheet" href="../CSS/Inicio_administrador.css" type="text/css"/>
+        <link rel="stylesheet" href="../CSS/Agregar_producto.css" type="text/css"/>
     </head>
     <body>
         <form action="procesar.cgi" method="POST">
-            <header id="menu">
-                <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu"); </script>
+            
+           <header id="menu">
+                <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu");</script>
             </header>
 
+            <br> <br> <br> <br>
+            
             <article>
-                <br> <br> <br> <br>
                 <table>
                     <tr>
-                        <td> Usuario: </td> <td> <input type="text" pattern="([_]|[a-zA-z]|[0-9])*" name="usuario" size="20" maxlength="20" required /> </td>
+                        <td> Nombre: </td> <td> <input type="text" size="20" maxlength="40" required /> </td>
                     </tr>
                     <tr>
-                        <td> Contraseña: </td> <td> <input type="password" name="password" size="20" maxlength="20" required /> </td>
+                        <td> Precio </td> <td> <input type="text" size="20" maxlength="40" required /> </td>
+                    </tr>
+                    <tr>
+                        <td> Nombre: </td> <td> <input type="file" required /> </td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td> <a href="../HTML/Sesion_iniciada_admin.html"> <input type="button" value="Entrar en mantenimiento" /> </a> </td>
+                        <td> <input type="reset" id="boton" value="Agregar" /> </td>
                     </tr>
                 </table>
             </article>
             
             <br>
-
+            
             <footer id="pie"> 
-                <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie"); </script>
+                <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie");</script>
             </footer>
+            
         </form>
     </body>
 </html>
