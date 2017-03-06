@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src=../JavaScript/libCapas.js></script>
+        <link rel="stylesheet" href="../CSS/Inicio_administrador.css" type="text/css"/>
+    </head>
+    <body>
+        <form action="procesar.cgi" method="POST">
+            <header id="menu">
+                <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu"); </script>
+            </header>
+
+            <article>
+                <br> <br> <br> <br>
+                <table>
+                    <tr>
+                        <td> Usuario: </td> <td> <input type="text" pattern="([_]|[a-zA-z]|[0-9])*" name="usuario" size="20" maxlength="20" required /> </td>
+                    </tr>
+                    <tr>
+                        <td> Contraseña: </td> <td> <input type="password" name="password" size="20" maxlength="20" required /> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="submit" value="Entrar en mantenimiento" /> </td>
+                    </tr>
+                </table>
+            </article>
+
+            <footer id="pie"> 
+                <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie"); </script>
+            </footer>
+        </form>
+    </body>
+</html>
