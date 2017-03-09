@@ -13,52 +13,57 @@ and open the template in the editor.
         <link rel="stylesheet" href="../CSS/Inicio.css" type="text/css"/>
     </head>
     <body>
-        <form action="procesar.cgi" method="POST">
-            <header id="menu">
-                <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu"); </script>
-            </header>
-            
-            <br> <br> <br> <br>
-            
-            <article>
-                <table border="1">
-                    <tr>
-                        <td colspan="4"> <img src="../Imagenes/videogames.jpg"> </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <table>
-                                <tr> BIENVENIDO <br> <br> </tr>
-                                <tr> <a href="../HTML/Inicio_sesion.html"> Iniciar sesión </a> </tr>
-                            </table>
-                        </td>
-                        <td colspan="3">
-                            <h3> Producto estrella </h3>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="4"> 
-                            OFERTAS <br>
-                            <table>
-                                <tr>
-                                    <td> 1 Oferta </td>
-                                    <td> 2 Oferta </td>
-                                    <td> 3 Oferta </td>
-                                    <td> 4 Oferta </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </article>
 
-            <br>
-            
-            <footer id="pie"> 
-                <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie"); </script>
-            </footer>
-        </form>
-    </body>
-</html>
+        <form action="procesar.cgi" method="POST">
+            <div class="menu">
+                <header id="menu">
+                    <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu");</script>
+                </header>
+            </div>
+                <div class="principal">
+                <br> <br> <br> <br>
+
+                <article>
+                    <table border="1">
+                        <tr>
+                            <td colspan="4"> <img src="../Imagenes/videogames.jpg" height="350" width="615"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr> <strong><u>  BIENVENIDO </u><strong> <br> <br> </tr>
+                                            <tr> <a href="../HTML/Inicio_sesion.html"> Iniciar sesión </a> </tr>
+                                            </table>
+                                            </td>
+                                            <td colspan="3">
+                                                <h3> Producto estrella </h3>
+                                            </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="4"> 
+                                                    <strong><u> OFERTAS </u></strong> <br> <br>
+                                                    <table id="oferta" align="center" cellspacing="90" width="100%">
+                                                        <tr>
+                                                            <td>  <img src="../Imagenes/horizon.jpg" height="200" width="175"> <br> <input id="boton" type="button" height="40" value="A la cesta" /> <br> </td>
+                                                            <td> <img src="../Imagenes/nier.jpg" height="200" width="175"> <br> <input id="boton" type="button" height="40" value="A la cesta" /> <br> </td>
+                                                            <td> <img src="../Imagenes/devil.jpg" height="200" width="175"> <br> <input id="boton" type="button" height="40" value="A la cesta" /> <br> </td>   
+                                                        </tr>
+                                                    </table>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                            </table>
+                                            </article>
+
+                                            <br>
+
+                                            <footer id="pie"> 
+                                                <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie");</script>
+                                            </footer>
+                                            </div>
+                                            </form>
+
+                                            </body>
+                                            </html>
