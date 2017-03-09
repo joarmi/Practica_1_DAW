@@ -129,3 +129,17 @@ function deshabilitar(){
     document.getElementById("mail").disabled = true;
     document.getElementById("boton").disabled = true;
 }
+
+function realizarPedidos(){
+    document.getElementById("num1").disabled = true;
+    document.getElementById("num2").disabled = true;
+    document.getElementById("num3").disabled = true;
+    document.getElementById("mod1").disabled = true;
+    document.getElementById("mod2").disabled = true;
+    document.getElementById("mod3").disabled = true;
+    document.getElementById("can1").disabled = true;
+    document.getElementById("can2").disabled = true;
+    document.getElementById("can3").disabled = true;
+    
+    alert("Pedidos enviados");
+}
