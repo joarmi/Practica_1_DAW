@@ -14,20 +14,21 @@ and open the template in the editor.
     </head>
     <body>
         <form action="procesar.cgi" method="POST">
-            <header id="menu">
-                <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu");</script>
-            </header>
+            <div class="menu">
+                <header id="menu">
+                    <script> Cargar("../HTML/Auxiliar/Menu_desplegable.html", "menu");</script>
+                </header>
+            </div>
 
             <article>
-                <br> <br> <br>
 
-                <h3> Estamos aqui </h3>
+                <h1> Estamos aqui </h1>
                 <div id="map">
                     <script> initMap()</script>
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPFWlOxIh2-HZiZtM6GHshfs8ZQv2w748&callback=initMap"></script>
                 </div>
 
-                <br> <br>
+                <br>
 
                 <div id="horarios">
                     <h3> Horarios de atencion al cliente </h3>
@@ -43,7 +44,7 @@ and open the template in the editor.
 
                 <div id="telefono">
                     <h3> Teléfono </h3>
-                    <a>  Para cualquier tipo de duda: <b> 963 44 55 67 </b> </a>
+                    <a>  Para cualquier tipo de duda: <b> 963 44 55 67 </b> </a> 
                 </div>
 
                 <br> <br>
@@ -53,15 +54,15 @@ and open the template in the editor.
                         <a> Envianos un correo </a>
                     </tr>
                     <tr>
-                        <td> <textarea id="textArea" rows="2" cols="25"> </textarea> </td>
+                        <td> <textarea id="textArea" rows="8" cols="35"> </textarea> </td>
                     <tr>
                         <td> <input type="reset" value="Enviar" /> </td>
                     </tr>
                 </table>
-                
-                <br>
 
             </article>
+            
+            <br>
 
             <footer id="pie"> 
                 <script> Cargar("../HTML/Auxiliar/Pie_de_pagina.html", "pie");</script>
