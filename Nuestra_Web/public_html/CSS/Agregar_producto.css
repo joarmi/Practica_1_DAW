@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 06-mar-2017, 20:07:12
     Author     : Javier Argente Micó
 */
+
 html {
     position: relative; 
     min-height: 100%;
@@ -115,3 +116,5 @@ article {
     font-weight: bold;
     background-color: white;
 }
+
+
